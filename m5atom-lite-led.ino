@@ -2,10 +2,14 @@
 
 #include <M5Atom.h>
 
+// LED色
+const int RED = 0x00ff00;
+
 void setup() {
   M5.begin(true, false, true);
-  
-  M5.dis.drawpix(0, 0xff0000);
+  delay(200);
+
+  M5.dis.drawpix(0, RED);
   delay(1000);
 
   for (int i = 0; i <= 100; i++)
